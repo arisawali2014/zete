@@ -128,7 +128,7 @@ class Baileys
     {
         $phone = $this->formatJid($phone);
         $isGroup = false;
-        if (str_contains($receiver,'-')){
+        if (str_contains($phone,'-')){
             $isGroup = true;
         }
         $type = $this->formatType($isGroup);
