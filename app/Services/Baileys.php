@@ -51,7 +51,9 @@ class Baileys
         if (str_contains($receiver, '@')) return $receiver;
 
         $receiver = (str_starts_with($receiver, '0')) ? ('62' . substr($receiver, 1)) : $receiver;
-
+        if (str_contains($receiver,'-')){
+            $isGroup = true;
+        }
         return $receiver . ($isGroup ? '@g.us' : '@s.whatsapp.net');
     }
 
