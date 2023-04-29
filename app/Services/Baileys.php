@@ -134,7 +134,7 @@ class Baileys
             //     'text' => $message
             // ]
         );
-
+        print_r(json_encode($data));
         $response = $this->http->asJson()->post( $device_id . '/messages/send', $data);
 
         return $response->object();
