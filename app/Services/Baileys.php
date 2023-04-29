@@ -98,7 +98,11 @@ class Baileys
     public function sendMessages($id, $receiver, $message)
     {
         $receiver = $this->formatJid($receiver);
-        $type = $this->formatType();
+        $isGroup = false;
+        if (str_contains($receiver,'-')){
+            $isGroup = true;
+        }
+        $type = $this->formatType($isGroup);
 
         // new post
         $data = array(
@@ -123,7 +127,11 @@ class Baileys
     public function chatSend($device_id, $phone, $message)
     {
         $phone = $this->formatJid($phone);
-        $type = $this->formatType();
+        $isGroup = false;
+        if (str_contains($receiver,'-')){
+            $isGroup = true;
+        }
+        $type = $this->formatType($isGroup);
 
         // new post
         $data = array(
