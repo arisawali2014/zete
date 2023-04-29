@@ -37,7 +37,6 @@ class ChatController extends Controller
         }
 
         $result = chatSend($device_id, $phone, $message);
-        print_r(json_encode($result,JSON_PRETTY_PRINT));
         // $curl = curl_init();
         // // new post
         // $data = array(
