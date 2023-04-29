@@ -62,7 +62,7 @@ class ChatController extends Controller
         // curl_close($curl);
         $result = json_encode($result);
         $result = json_decode($result);
-        if(in_array($result->result->status,['PENDING','SENT','DELIVERED','READ'])){
+        if(in_array($result->status,['PENDING','SENT','DELIVERED','READ'])){
             $status = 200;
         }else{
             $status = 500;
