@@ -36,7 +36,7 @@ class ChatController extends Controller
             $phone = '62' . substr($phone, 1);
         }
 
-        $result = sendMessages($device_id, $phone, $message);
+        $result = sendMessages($device_id, $phone, json_encode($message));
         print_r($result);
         // $curl = curl_init();
         // // new post
