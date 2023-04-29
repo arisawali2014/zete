@@ -60,9 +60,9 @@ class ChatController extends Controller
         // ));
         // $result = curl_exec($curl);
         // curl_close($curl);
-        // $result = json_encode($result);
-
-        if($result->result->success == true){
+        $result = json_encode($result);
+        $result = json_decode($result);
+        if(in_array($result->result->status,['PENDING','SENT','DELIVERED','READ'])){
             $status = 200;
         }else{
             $status = 500;
