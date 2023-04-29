@@ -51,10 +51,10 @@ class Baileys
         if (str_contains($receiver, '@')) return $receiver;
 
         $receiver = (str_starts_with($receiver, '0')) ? ('62' . substr($receiver, 1)) : $receiver;
-        if (str_contains($receiver,'-')){
+        if (str_contains($receiver,'@g.us')){
             $isGroup = true;
         }
-        return $receiver . ($isGroup ? '@g.us' : '@s.whatsapp.net');
+        return $receiver . ($isGroup ? '' : '@s.whatsapp.net');
     }
 
     /**
@@ -99,7 +99,7 @@ class Baileys
     {
         $receiver = $this->formatJid($receiver);
         $isGroup = false;
-        if (str_contains($receiver,'-')){
+        if (str_contains($receiver,'@g.us')){
             $isGroup = true;
         }
         $type = $this->formatType($isGroup);
@@ -128,7 +128,7 @@ class Baileys
     {
         $phone = $this->formatJid($phone);
         $isGroup = false;
-        if (str_contains($phone,'-')){
+        if (str_contains($phone,'@g.us')){
             $isGroup = true;
         }
         $type = $this->formatType($isGroup);
