@@ -1,10 +1,10 @@
-<p align="center"><a href="https://github.com/cinderjk/zete" target="_blank"><img src="https://user-images.githubusercontent.com/85218269/204297488-b37d1b48-3074-4758-b2eb-fca32f2729b8.png" width="200" alt="Zete Logo"></a></p>
+<p align="center"><a href="https://github.com/cinderjk/WA AkuTopup" target="_blank"><img src="https://user-images.githubusercontent.com/85218269/204297488-b37d1b48-3074-4758-b2eb-fca32f2729b8.png" width="200" alt="WA AkuTopup Logo"></a></p>
 
-# Zete-Panel for WhatsApp API
+# WA AkuTopup-Panel for WhatsApp API
 
-[![Tests](https://github.com/cinderjk/zete/actions/workflows/laravel.yml/badge.svg)](https://github.com/cinderjk/zete/actions/workflows/laravel.yml)
+[![Tests](https://github.com/cinderjk/WA AkuTopup/actions/workflows/laravel.yml/badge.svg)](https://github.com/cinderjk/WA AkuTopup/actions/workflows/laravel.yml)
 
-Zete-Panel, is an open-source application interface for this
+WA AkuTopup-Panel, is an open-source application interface for this
 [ookamiiixd/baileys-api](https://github.com/ookamiiixd/baileys-api/tree/1.0.0-beta.0) with laravel/livewire and you can install it on any Shared Hosting that support NodeJs and SSH
 
 ## Features
@@ -150,13 +150,13 @@ npx pm2 start app.js
 13. Now the endpoint should be available according to your environment variables configuration. Default is at `http://example.yourdomain.com`
 Your API is ready, give it a try here => [DOCS](https://documenter.getpostman.com/view/18988925/2s8Z73zWbg)
 
-### Install Zete-Panel
+### Install WA AkuTopup-Panel
 
 1. Create a new domain, e.g. yourdomain.com
 2. Open the terminal or SHH to start cloning this repository to your domain directory
 
 ```bash
-git clone https://github.com/cinderjk/zete.git public_html/yourdomain.com
+git clone https://github.com/cinderjk/WA AkuTopup.git public_html/yourdomain.com
 ```
 
 3. Enter to the domain directory.
@@ -175,7 +175,7 @@ composer i
 5. Open file manager and edit the .env
 
 ```bash
-APP_NAME=Zete
+APP_NAME=WA AkuTopup
 APP_ENV=local
 APP_KEY=base64:oLpa/yTwIUUiFoPg5A17Ao15djIt6d4SOwUvdZyp5QZ=
 APP_DEBUG=false
@@ -186,9 +186,9 @@ USE_JOB_QUEUE=false
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=your_zete_database
-DB_USERNAME=your_zete_database_username
-DB_PASSWORD=your_zete_database_password
+DB_DATABASE=your_WA AkuTopup_database
+DB_USERNAME=your_WA AkuTopup_database_username
+DB_PASSWORD=your_WA AkuTopup_database_password
 ```
 
 #### Note:

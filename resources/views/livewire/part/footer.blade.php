@@ -14,7 +14,7 @@
             <nav>
                 <ul>
                     <li>
-                        &copy;<a href="https://github.com/cinderjk/zete">Zete</a>
+                        &copy;<a href="https://github.com/cinderjk/WA AkuTopup">WA AkuTopup</a>
                     </li>
                 </ul>
             </nav>
