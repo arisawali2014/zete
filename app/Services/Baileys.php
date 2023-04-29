@@ -127,9 +127,10 @@ class Baileys
         $data = array(
             'jid' => $phone,
             'type' => $type,
-            'message' => [
-                'text' => $message
-            ]
+            'message' => $message
+            // 'message' => [
+            //     'text' => $message
+            // ]
         );
 
         $response = $this->http->asJson()->post( $device_id . '/messages/send', $data);

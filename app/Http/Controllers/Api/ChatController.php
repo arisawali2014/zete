@@ -36,7 +36,7 @@ class ChatController extends Controller
             $phone = '62' . substr($phone, 1);
         }
 
-        $result = sendMessages($device_id, $phone, json_encode($message));
+        $result = chatSend($device_id, $phone, $message);
         print_r(json_encode($result,JSON_PRETTY_PRINT));
         // $curl = curl_init();
         // // new post
@@ -62,7 +62,7 @@ class ChatController extends Controller
         // curl_close($curl);
         // $result = json_encode($result);
 
-        if($result->success == true){
+        if($result->result->success == true){
             $status = 200;
         }else{
             $status = 500;
